@@ -1,0 +1,27 @@
+{
+  "name": "yushiv2",
+  "version": "0.1.9",
+  "description": "yushi v2. Testing load/save/update mongodb via postman only! Maybe add button or/and script to trigger mongodb methods.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yushi",
+    "v2",
+    "mongodb",
+    "umeka",
+    "sayoko",
+    "game",
+    "project",
+    "test",
+    "project"
+  ],
+  "author": "umeka",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6"
+  }
+}
