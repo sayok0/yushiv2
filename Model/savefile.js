@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const SaveFileSchema = new mongoose.Schema({
     saveFileID : {
         type : String,
-        required : true
+        required : true,
+        unique : true
     },
     killsCount : {
         type : Number,
@@ -18,6 +19,11 @@ const SaveFileSchema = new mongoose.Schema({
         default : 1
     },
     xp : {
+        type: Number,
+        required : false,
+        default : 0
+    },
+    coin : {
         type: Number,
         required : false,
         default : 0
@@ -53,5 +59,10 @@ and found one that the did use "default"
 So I did replace required from true to false, and insert default : <anything here>
 Thats mean I can just add saveFileID!
 
+
+
+Update2;
+Did found out that you can have "unique" as prop to true,
+this will make sure that you can't have more than 1 same saveFileID name!
 
 */
